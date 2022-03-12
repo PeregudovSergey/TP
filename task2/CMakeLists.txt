@@ -16,5 +16,7 @@ add_subdirectory(B)
 
 add_executable(C ${MAIN_SOURCE}) 
 
+target_include_directories(C PUBLIC ${PROJECT_SOURCE_DIR})
+
 target_link_libraries(C MyLib)
 
