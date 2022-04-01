@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-set(CMAKE_CXX_COMPILER ${TOOLCHAIN}/aarch64-linux-gnu-c++)
+set(CMAKE_CXX_COMPILER ${TOOLCHAIN}/aarch64-linux-gnu-g++)
 project(SimpleLibrary)
 
 include_directories(include)
@@ -13,4 +13,5 @@ add_executable(MainLib main_lib.cpp)
 target_link_libraries(MainLib buffer)
 
 
-install(TARGETS Main MainLib DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
+install(TARGETS Main DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
+install(LIBRARY MainLib DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
