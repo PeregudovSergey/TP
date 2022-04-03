@@ -1,0 +1,8 @@
+/home/sergey/task3/TP/task3/install/bin/Main
+/home/sergey/task3/TP/task3/install/bin/MainLib
+/home/sergey/task3/TP/task3/install/lib/libbuffer.so
+/home/sergey/task3/TP/task3/install/lib/libbuffer.so
+/home/sergey/task3/TP/task3/install/bin/MainLib
+/home/sergey/task3/TP/task3/install/src/buffer.cpp
+/home/sergey/task3/TP/task3/install/src/CMakeLists.txt
+/home/sergey/task3/TP/task3/install/include/buffer.h
