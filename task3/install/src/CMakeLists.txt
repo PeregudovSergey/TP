@@ -1,3 +1,0 @@
-set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
-set(CMAKE_BUILD_WITH_INSTALL_RPATH true)
-add_library(buffer SHARED buffer.cpp)

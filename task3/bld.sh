@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir build
 cp start.sh build/start.sh
 rm -r build/*
 cp start.sh build/start.sh
