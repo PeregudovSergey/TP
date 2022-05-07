@@ -11,14 +11,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
-    steps:
-    - uses: actions/checkout@v2
-    
-    - name: Clone google test
-      working-directory: ${{github.workspace}}/task6/3rdparty
-      run: git clone "https://github.com/google/googletest"
-
-    - name: Build
-      working-directory: ${{github.workspace}}/task6
-      run: mkdir build && cd build && cmake ..
+    steps: 
+      - uses: actions/checkout@v2
+      - run: ls
