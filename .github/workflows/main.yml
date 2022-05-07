@@ -6,14 +6,18 @@ on:
   pull_request:
     branches: [ task6 ]
 
-env: 
-  GOOGLE_TEST_DIR: test
+#env: 
+  #GOOGLE_TEST_DIR: test
 jobs:
   build:
     runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v2
+    
+    - name: Clone google test
+      working-directory: ${{github.workspace}}/task6/3rdparty
+      run: git clone "https://github.com/google/googletest"
 
     - name: Build
       working-directory: ${{github.workspace}}/task6
