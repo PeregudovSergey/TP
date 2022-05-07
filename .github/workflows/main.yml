@@ -7,7 +7,7 @@ on:
     branches: [ task6 ]
 
 env: 
-  GOOGLE_TEST_DIR: .
+  GOOGLE_TEST_DIR: googletest
   
 jobs:
   build:
