@@ -13,10 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:       
       - uses: actions/checkout@v2
-      - name: Build
+      - name: clon
         working-directory: ${{github.workspace}}/task6        
         run: mkdir 3rdparty && cd 3rdparty && git clone https://github.com/google/googletest  
         
-      - name: files      
+      - name: check_files      
         working-directory: ${{github.workspace}}/task6        
         run: pwd && ls
+        
+      - name: Build
+        working-directory: ${{github.workspace}}/task6       
+        run: mkdir build && cd build && cmake ..
