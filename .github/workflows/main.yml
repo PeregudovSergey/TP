@@ -29,7 +29,7 @@ jobs:
       - name: Test
         uses: akhtyamovpavel/ActionGtestReport@v0.0.9 
         with:
-          exec-path: /home/runner/work/TP/TP/task6/bin/CTestExe
+          exec-path: task6/bin/CTestExe
           report-path: task6/bin/report.xml
           working-directory: .
           
