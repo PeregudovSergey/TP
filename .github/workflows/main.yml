@@ -18,4 +18,5 @@ jobs:
         run: mkdir 3rdparty && cd 3rdparty && git clone https://github.com/google/googletest  
         
       - name: files      
+        working-directory: ${{github.workspace}}/task6        
         run: pwd && ls
