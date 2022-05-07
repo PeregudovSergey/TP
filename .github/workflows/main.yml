@@ -20,7 +20,7 @@ jobs:
         
       - name: check_files      
         working-directory: ${{github.workspace}}/task6 
-        run: pwd && ls
+        run: pwd && cd 3rdparty && ls
         
       - name: Build
         working-directory: ${{github.workspace}}/task6       
