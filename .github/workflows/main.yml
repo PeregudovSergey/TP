@@ -24,14 +24,24 @@ jobs:
         
       - name: Build
         working-directory: ${{github.workspace}}/task6       
-        run: mkdir build && cd build && cmake .. && make
+        run: mkdir build && cd build && cmake .. && make && make install
       
-    #- name: Test
-      - uses: akhtyamovpavel/ActionGtestReport@v0.0.9 
+      - name: Test
+        uses: akhtyamovpavel/ActionGtestReport@v0.0.9 
         with:
           exec-path: task6/bin/CTestExe
           report-path: task6/bin/report.xml
           working-directory: .
           
+      - name: UploadArtifacts     
+        uses: actions/download-artifact@v3
+        with: 
+          name: Distributive
+          path: |
+            task6/bin
+            task6/lib
+                
+
+        
       
         
