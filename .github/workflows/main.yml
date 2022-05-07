@@ -15,6 +15,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build
         working-directory: ${{github.workspace}}/task6
-        run: echo ${github.workspace}
+        run: ls
+        #run: echo ${github.workspace}
       #- run: mkdir git clone https://github.com/google/googletest
-      #run: ls
+      #
