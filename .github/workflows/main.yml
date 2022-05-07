@@ -30,7 +30,7 @@ jobs:
         uses: akhtyamovpavel/ActionGtestReport@v0.0.9 
         with:
           exec-path: /home/runner/work/TP/TP/task6/bin/CTestExe
-          report-path: /home/runner/work/TP/TP/task6/bin/report.xml
+          report-path: task6/bin/report.xml
           working-directory: .
           
       - name: UploadArtifacts     
