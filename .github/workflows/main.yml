@@ -11,6 +11,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps: 
+    steps:       
       - uses: actions/checkout@v2
+      - working-directory: ${{github.workspace}}/task6
+      - run: echo ${github.workspace}
+      #- run: mkdir git clone https://github.com/google/googletest
       - run: ls
